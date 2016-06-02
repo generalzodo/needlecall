@@ -1,0 +1,85 @@
+<ion-view view-title="New ticket Entry">
+ 
+<ion-content>
+
+<div id="messages" ng-show="message">{{ message }}</div>
+  <form name="ticketForm" novalidate="" ng-submit="newticket()">
+    <ion-list class="list-inset">
+
+      <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : ticketForm.title.$invalid&&ticketForm.title.$touched, 'no-errors' : ticketForm.title.$valid}">
+        <span class="input-label">Title</span>
+        <input type="text" placeholder="Ticket Title" name="title" ng-model="tick.title" required> </input>
+         
+      </label>
+      <div class="error-container" ng-show="ticketForm.title.$touched" ng-messages="ticketForm.title.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+
+      <label class="item item-input item-select" ng-class="{ 'has-errors' : ticketForm.category.$invalid&&ticketForm.category.$touched, 'no-errors' : ticketForm.category.$valid}">
+        <span class="input-label">Category</span>
+        <select ng-model="tick.category" name="category"required>
+          <option value="">Select category</option>
+           <option ng-repeat='pctem in pCats'   value="{{pctem.id}}">{{pctem.name}}</option>
+        </select>
+        
+      </label>
+
+      <div class="error-container" ng-show="ticketForm.category.$touched" ng-messages="ticketForm.category.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+
+      <label class="item item-input item-select"ng-class="{ 'has-errors' : ticketForm.priority.$invalid&&ticketForm.priority.$touched, 'no-errors' : ticketForm.priority.$valid}">
+        <span class="input-label">Priority</span>
+        <select ng-model="tick.priority" name="priority"required>
+       <option value="">Select a priority</option>
+            <option value="1">1 Normal </option>
+            <option value="2">2 Standard</option>
+            <option value="3">3 Urgent </option>
+            <option value="4">4 Very Urgent</option>
+            <option value="5">5 SOS</option>
+        </select>
+          
+      </label>
+
+      <div class="error-container" ng-show="ticketForm.priority.$touched" ng-messages="ticketForm.priority.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+
+      <label class="item item-input item-select" ng-class="{ 'has-errors' : ticketForm.client.$invalid&&ticketForm.client.$touched, 'no-errors' : ticketForm.client.$valid}">
+        <span class="input-label">Client</span>
+        <select ng-model="tick.client" name="client"required>
+        <option value="">Select a Client</option>
+          <option ng-repeat='ctem in clients'   value="{{ctem.id}}">{{ctem.name}}</option>
+        </select>
+       
+      </label>
+ <div class="error-container" ng-show="ticketForm.client.$touched" ng-messages="ticketForm.client.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+      <label class="item item-input item-select" ng-class="{ 'has-errors' : ticketForm.product.$invaliduser&&ticketForm.product.$touched, 'no-errors' : ticketForm.product.$valid}">
+        <span class="input-label">Product</span>
+        <select ng-model="tick.product" name="product"required>   
+         <option value="">Select a product</option>
+           <option ng-repeat='ptem in products'   value="{{ptem.id}}">{{ptem.name}}</option>
+        
+        </select>
+       
+      </label>
+       <div class="error-container" ng-show="ticketForm.product.$touched" ng-messages="ticketForm.product.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+        <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : ticketForm.description.$invalid&&ticketForm.description.$touched, 'no-errors' : ticketForm.description.$valid}">
+        <span class="input-label">Detail description of issue</span>
+        <textarea value="" placeholder="ticket description" ng-model="tick.description" name="description"required>  </textarea>
+       
+      </label>
+      <div class="error-container" ng-show="ticketForm.description.$touched" ng-messages="ticketForm.description.$error">
+              <div ng-messages-include="error-list.html"></div>
+      </div>
+        <button type="submit" class="button icon-right ion-checkmark button-positive" ng-click="newTicket()">
+         Submit
+       </button>
+    </ion-list>
+  </form>
+</ion-content>
+</ion-view>

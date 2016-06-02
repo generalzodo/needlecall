@@ -1,0 +1,24 @@
+
+
+<ion-view hide-nav-bar="true">
+
+  <ion-content class="">
+   {{contact}}
+    <button class="button button-full button-positive" ng-click="getAllContacts()">
+          Load Contacts
+        </button>   
+        <button class="button button-full button-positive" ng-click="addContact()">
+          Add Contact - Gajotres
+        </button>
+        <button class="button button-full button-positive" ng-click="removeContact()">
+          Remove Contact - Gajotres
+        </button>     
+        <ion-list>
+          <ion-item ng-repeat="con in contacts">
+            {{con.displayName}}
+          </ion-item>
+        </ion-list>
+
+  </ion-content>
+
+</ion-view>

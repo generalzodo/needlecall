@@ -1,0 +1,293 @@
+/* Empty. Add your own CSS if you like */
+
+
+.tabs
+{
+	top: 0 !important;
+	color: #145226;
+	}
+.tab-item-active{
+	border-color: #145226 !important;
+}
+.no-border{
+	border: none;
+}
+.button-balanced{
+	background-color: #20833C !important;
+}
+
+.splash{
+	position: relative;
+	width: 100%;
+}
+.logo{
+width: 200px;
+height: 100px;
+	position: absolute;
+	top: 50% !important;
+	left:50%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.welcome{
+
+	text-align: center;
+	background: url("../img/welcome.jpg") 80% -15% repeat ;
+}
+
+.welcome .content{
+	width: 100%;
+position: absolute !important;
+bottom:45px;
+text-align: center !important;
+}
+.welcome p{
+	color: #fff !important;
+	line-height: 1.7em;
+}
+
+.welcome .button {
+	padding-right:30px !important;
+	padding-left:30px !important;
+	line-height: 40px !important;
+	margin-bottom: 12px;
+	font-size: 14px !important;
+	min-height: 0 !important;
+}
+.welcome a {
+	color: #145226;
+	font-size:15px;
+	margin-left: 5px; 
+	margin-right: 5px; 
+}
+.content{
+	position: relative;
+}
+
+
+.verify{
+	width:100%;
+position: absolute !important;
+bottom:40%;
+text-align: center;
+}
+
+.setting{
+	font-size: 17px !important;
+}
+.sett{
+	padding: 10px 20px !important;
+	text-align: center;
+	background-color: #77CF7C;
+
+}
+
+.sett h2{
+font-size: 26px;
+color: #fff;
+
+}
+.sett h4{
+font-size: 13px;
+color: #fff;
+}
+.sett a{
+	background-color: #77CF7C !important; 
+color: #fff;
+width: 100%;
+padding: 0 20px !important;
+}
+.home_b{
+	position: absolute;
+	top:45%;
+	width:100%;
+	text-align: center;
+
+}
+
+.home_b h4 {
+	font-size: 14px;
+}
+
+.home_b p {
+	font-size: 13px;
+}
+
+.open { 
+	max-height: 500px !important;
+    -moz-transition-duration: 0.8s !;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s !important;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    overflow: hidden;
+}
+.pull_call{
+	position: relative;
+	background-color:#20833C;
+	height: 160px;
+	width: 100%;
+	  overflow: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    
+}
+
+.fade{
+	background-color: rgba(255,255,255,0.5);
+	height: auto;
+	min-height: 250px;
+	z-index: 100;
+}
+
+
+.fs_01{
+	padding: 0px 25px;
+	margin: 10px; 
+	font-size: 13px;
+	line-height: 35px !important;
+	min-height: 0 !important;
+	}
+.fs_02{
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.fs_02 .icon{
+	font-size: 14px;
+}
+.fs_03{
+	float: right !important;
+	font-size: 12px;
+	display: inline !important;
+	font-weight: lighter;
+	text-align: center;
+	border: solid 1px #f6f6f6;
+	padding: 5px 10px;
+	margin: 5px 5px
+}
+.fs_03 i{
+	font-size: 18px;
+}
+.item_call{
+	background-color: transparent;
+	width: 95%;
+	color: white;
+	border: none;
+	border-bottom: solid 2px #fff;
+	margin: 0px auto;
+	padding: 0 10px;
+	position: relative;
+	bottom: 10px;
+	border-radius: 0;
+}
+
+.item_call input{
+	background-color: transparent;
+	width: 90%;
+	margin
+
+}
+.item_call i{
+	color: #fff;
+	font-size: 18px;
+	margin-top:13px;
+}
+
+.item_call button{
+	color: #fff !important;
+	font-size: 30px !important;
+	float: right !important;
+	padding: 0px !important;
+	min-height: 0;
+	min-width: 0;
+	background-color: transparent;
+	margin-top: 5px;
+}
+
+.num_view{
+
+	min-height:200px;
+	font-size: 35px !important;
+	margin-top: 30px !important;
+	text-align: center !important;
+	
+}
+
+.numpad{
+
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	background-color: #f6f6f6;
+	padding-top: 5px;
+
+}
+
+
+.numpad button{
+	width: 32%;
+	padding: 10px 0px;
+	margin: 2px;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	color: #145226;
+
+}
+
+.numpad button span{
+	font-size: 12px;
+	margin: -5px !important;
+	color: #ccc;
+	display: block;
+}
+
+.numpad .controls{
+	float:right;
+	width: 100%;
+	text-align: left !i;
+}
+
+.numpad button.call_button{
+	background-color: #77CF7C !important;
+	font-size: 22px !important;
+	color: #fff;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	margin: 5px 8%;
+	padding: 0 
+	
+}
+.numpad button.clear_button{
+	width: 33% !important;
+	font-size: 22px !important;
+	float: right;
+
+}
+.numpad button.contact_button{
+	width: 33% !important;
+	font-size: 22px !important;
+	float: left;
+	
+}
+.numpad button.call_button i{
+	outline-color:  #77CF7C;
+}

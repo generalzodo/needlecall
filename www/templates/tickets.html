@@ -1,0 +1,30 @@
+<ion-view view-title="Tickets">
+
+<div class="bar bar-subheader 
+  item-input-inset bar-light no-padding">
+
+  <label class="item item-input-wrapper">
+  
+    <i class="icon icon-large ion-ios-search placeholder-icon "></i>
+    
+    <input type="search" ng-model="query" placeholder="Search">
+  </label>
+  
+</div>
+<ion-content 
+  class="has-subheader " ng-controller="TicketController">
+  
+  <ion-refresher on-refresh="doRefresh()">
+  </ion-refresher>
+  <ion-list>
+    <ion-item  ng-repeat='item in tickets  | filter: query'
+    class=" item-icon-right
+      item-text-wrap" href="#/tab/ticket/{{item.id}}" ng-class="{'activ': item.status_id == 2, 'pending': item.status_id == 1 , 'open': item.status_id == 4, 'closed': item.status_id == 5 }">      
+      <p><span class="on">{{item.title}}</span>  by {{item['get_creator'].name}}</p>
+      <p class="tag_line"><time class="clear">{{item.created_at | amCalendar}}</time></p>
+      <p class="none" ></p>
+     <button class="button icon ion-ios-arrow-right button-large  padding button-clear "></button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-view>

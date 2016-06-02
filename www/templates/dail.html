@@ -1,0 +1,31 @@
+
+
+<ion-view hide-nav-bar="true" cache-view="false" >
+
+  <ion-content class="splash ">
+   
+    <label class="item item-input">
+
+  <input type="tel" class ='num_view' ng-model="scale.output" >
+</label>
+
+
+<div class="numpad">
+<button ng-click="scale.entry(1)">1</button><button ng-click="scale.entry(2)">2 <span>ABC</span></button><button ng-click="scale.entry(3)">3 <span>DEF</span></button>
+<div class="clear"></div>
+<button ng-click="scale.entry(4)">4 <span>GHI</span></button><button ng-click="scale.entry(5)">5 <span>JKL</span></button><button ng-click="scale.entry(6)">6 <span>MNO</span></button>
+<div class="clear"></div>
+<button ng-click="scale.entry(7)">7 <span>PQRS</span></button><button ng-click="scale.entry(8)">8 <span>TUV</span></button><button ng-click="scale.entry(9)">9 <span>WXYZ</span></button>
+<div class="clear"></div>
+<button ng-click="scale.entry('*')"> * </button><button on-tap="scale.entry(0)" on-hold="scale.entry('+')">0 <span>+</span></button><button ng-click="scale.entry('#')">#</button>
+
+<div class="clear"></div>
+<div class="controls">
+<button  class="contact_button">  <i class="icon ion-android-contacts"></i></button>
+<button  class="call_button">  <i class="icon ion-ios-telephone"></i></button>
+<button  class="clear_button" on-tap="scale.ce()" on-hold="scale.clear()">  <i class="icon ion-backspace"></i></button>
+
+</div>	</div>	
+  </ion-content>
+
+</ion-view>

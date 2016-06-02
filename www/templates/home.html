@@ -1,0 +1,33 @@
+
+
+<ion-view hide-nav-bar="true" cache-view="false" >
+		
+
+  <ion-content class="content "  on-swipe-down="pullCall(true)" on-swipe-up="pullCall(false)" >
+  
+   	 <div class="pull_call" ng-class="{'open': pc == true}">
+ 
+   		 <label class="item item-input-wrapper item_call">
+		  
+		    <i class="icon icon-large ion-ios-search placeholder-icon "></i>
+		    
+		    <input type="search" ng-model="query" placeholder="">
+		    <button ng-click ="pullCall(false)" class="button pull-right fs20">&times;</b
+  		</label>
+
+   	 </div>
+
+   	 
+
+   	 	
+		<div class="home_b"  ng-click ="pullCall(false)">
+			<h4>Swipe down to make your first call</h4>
+			<p>We have added 5 free minutes to your account</p>
+			</div>
+			<div ng-class="{'fade': pc == true}">
+			
+		</div>
+  </ion-content>
+
+ 
+</ion-view> 

@@ -1,0 +1,28 @@
+<ion-view view-title="More Info">
+  <ion-content>
+    <ion-list class="list-inset">
+   
+    <ion-item class="no-border padding"
+        ng-repeat="item in tickets | filter:
+         { id: whichTicket }">
+       <ion-item class="item-divider"><h3>Ticket Details</h3></ion-item>
+      <ion-item class="item-text-wrap">
+          
+          <h2>Ticket #{{ item.serial }}</h2><br/>
+          <p><span class="shd"> Ticket title: </span>{{ item.title }}</p>
+          <p><span class="shd"> Client: </span>{{ item[0].name}}</p>
+          <p><span class="shd"> Date created: </span>{{ item.created_at | amCalendar}}</p>
+          <p><span class="shd"> Created by:</span> {{ item['get_creator'].name }}</p>
+          <p><span class="shd"> Further details:</span> {{ item.description }}</p>
+      </ion-item>
+
+      <ion-item class="item-divider"><h3>Ticket Assignnmet</h3></ion-item>
+      <ion-item><p><span class="shd"> Assigned to:</span> {{ item['get_assigned_user'].name }}   </p>
+
+      <p> <span class="shd">Assigned by:</span> {{ item['get_assigned_by'].name}}</p> </ion-item>
+
+          
+    </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
